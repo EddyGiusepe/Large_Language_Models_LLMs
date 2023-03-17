@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Eddy
- venv_LLMs/
+venv_LLMs/
