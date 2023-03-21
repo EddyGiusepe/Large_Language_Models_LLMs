@@ -131,3 +131,9 @@ dmypy.json
 # Eddy
 venv_LLMs/
 .env
+credit_risk_dataset.csv
+fakenews.csv
+pre-processed.csv
+resposta_text.csv
+GPT_List_Insert/
+Testando_Biblioteca/
