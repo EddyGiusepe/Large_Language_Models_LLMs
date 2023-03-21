@@ -1,0 +1,25 @@
+Relatório de Vendas
+
+Produto: Camiseta
+Data da venda: 05/03/2023
+Quantidade vendida: 50
+Preço unitário: R$ 30,00
+Total da venda: R$ 1.500,00
+
+Produto: Calça Jeans
+Data da venda: 07/03/2023
+Quantidade vendida: 20
+Preço unitário: R$ 80,00
+Total da venda: R$ 1.600,00
+
+Produto: Tênis
+Data da venda: 10/03/2023
+Quantidade vendida: 10
+Preço unitário: R$ 120,00
+Total da venda: R$ 1.200,00
+
+Produto: Boné
+Data da venda: 12/03/2023
+Quantidade vendida: 30
+Preço unitário: R$ 25,00
+Total da venda: R$ 750,00

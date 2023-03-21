@@ -1,0 +1,25 @@
+Relatório de Vendas de Frutas
+
+Produto: Maçã
+Data da venda: 18/03/2023
+Quantidade vendida: 50kg
+Preço por kg: R$ 4,00
+Total da venda: R$ 200,00
+
+Produto: Banana
+Data da venda: 16/03/2023
+Quantidade vendida: 30kg
+Preço por kg: R$ 2,50
+Total da venda: R$ 75,00
+
+Produto: Abacaxi
+Data da venda: 14/03/2023
+Quantidade vendida: 20 unidades
+Preço por unidade: R$ 6,00
+Total da venda: R$ 120,00
+
+Produto: Laranja
+Data da venda: 12/03/2023
+Quantidade vendida: 40kg
+Preço por kg: R$ 3,00
+Total da venda: R$ 120,00
