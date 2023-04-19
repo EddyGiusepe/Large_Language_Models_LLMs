@@ -99,7 +99,7 @@ retriever.search_kwargs['k'] = 2
 
 qa = RetrievalQA.from_chain_type(llm=OpenAI_llm,
                                 chain_type="stuff",
-                                return_source_documents=False,
+                                return_source_documents=True, # Tem que ser True para poder printar abaixo --> print(result['source_documents'])
                                 retriever=retriever,
                                 chain_type_kwargs=chain_type_kwargs
                                )
@@ -116,4 +116,5 @@ while True:
         query = input("Digite a sua query: ")
         result = qa(query)
         print(result['result'])
+        print(result['source_documents'])
         print("Tokens usados: ", cb.total_tokens)
