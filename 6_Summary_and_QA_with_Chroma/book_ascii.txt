@@ -1,0 +1,39 @@
+A fsica newtoniana  uma teoria que descreve o comportamento dos corpos em movimento e suas interaes,
+
+desenvolvida pelo fsico ingls Isaac Newton no sculo XVII. A teoria se baseia em trs leis fundamentais:
+
+a lei da inrcia, a lei da dinmica e a lei da ao e reao. Essas leis estabelecem que um objeto em repouso
+
+permanecer em repouso, e um objeto em movimento continuar em movimento em linha reta com velocidade constante,
+
+a menos que uma fora externa atue sobre ele. A lei da dinmica estabelece que a fora aplicada a um objeto 
+
+diretamente proporcional  sua acelerao, enquanto sua massa  inversamente proporcional  acelerao.
+
+A terceira lei da ao e reao estabelece que para cada ao h uma reao igual e oposta.
+
+A teoria de Newton tambm inclui a lei da gravitao universal, que descreve a fora de atrao entre dois
+
+corpos com massa, que  diretamente proporcional s suas massas e inversamente proporcional ao quadrado da distncia
+
+entre eles. A fsica newtoniana foi fundamental para o desenvolvimento da mecnica clssica e da fsica moderna,
+
+alm de ter aplicaes prticas em muitos campos, como engenharia, astronomia, e tecnologia em geral.
+
+A teoria de Newton  aplicada na resoluo de problemas envolvendo movimento de corpos em diferentes situaes,
+
+como queda livre, lanamento de projteis, movimento de planetas, entre outros. Alm disso, a fsica newtoniana
+
+tambm forneceu uma base terica para o desenvolvimento da fsica quntica e da relatividade, que expandiram
+
+e modificaram a teoria newtoniana em diferentes escalas e situaes. Embora a teoria de Newton seja amplamente
+
+utilizada e ainda seja muito relevante, ela tem limitaes, especialmente em escalas muito pequenas ou muito grandes,
+
+como na escala atmica ou em velocidades prximas  da luz. Nessas situaes, outras teorias so necessrias
+
+para descrever o comportamento da matria e da energia. No geral, a fsica newtoniana  uma teoria importante
+
+para o estudo da natureza e do universo, e continua a ser uma das teorias mais bem-sucedidas na descrio
+
+do movimento dos corpos na escala humana.
