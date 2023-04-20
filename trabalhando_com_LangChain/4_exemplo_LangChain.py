@@ -27,8 +27,9 @@ Esta cadeia é usada nas conversas para CARREGAR O CONTEXTO DA MEMÓRIA.
 from langchain import OpenAI, ConversationChain
 from langchain.memory import ConversationBufferMemory
 
+
 llm = OpenAI(temperature=0,
-             max_tokens=150,
+             max_tokens=50,
              verbose=True
             )
 
@@ -36,6 +37,11 @@ conversation = ConversationChain(llm=llm,
                                  verbose=True,
                                  memory=ConversationBufferMemory()
                                 )
+
+# Salvando o Prompt e o Modelo:
+conversation.llm.save("eddy_LLM.json")
+conversation.prompt.save("eddy_prompt.json")
+
 
 # print("Digite a sua pergunta para começar uma conversa com a AI: ")
 # while True:
@@ -45,11 +51,14 @@ conversation = ConversationChain(llm=llm,
 
 #     if not user_input:
 #         break
+
+
+
 print("Digite a sua pergunta para começar uma conversa com a AI: ")
 while True:
     query = input("Human: ")
     result = conversation({"input": query})
     print("AI: " + result['response'])
-    
+
     if not query:
         break
