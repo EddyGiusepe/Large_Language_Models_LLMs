@@ -1,0 +1,39 @@
+A física newtoniana é uma teoria que descreve o comportamento dos corpos em movimento e suas interações,
+
+desenvolvida pelo físico inglês Isaac Newton no século XVII. A teoria se baseia em três leis fundamentais:
+
+a lei da inércia, a lei da dinâmica e a lei da ação e reação. Essas leis estabelecem que um objeto em repouso
+
+permanecerá em repouso, e um objeto em movimento continuará em movimento em linha reta com velocidade constante,
+
+a menos que uma força externa atue sobre ele. A lei da dinâmica estabelece que a força aplicada a um objeto é
+
+diretamente proporcional à sua aceleração, enquanto sua massa é inversamente proporcional à aceleração.
+
+A terceira lei da ação e reação estabelece que para cada ação há uma reação igual e oposta.
+
+A teoria de Newton também inclui a lei da gravitação universal, que descreve a força de atração entre dois
+
+corpos com massa, que é diretamente proporcional às suas massas e inversamente proporcional ao quadrado da distância
+
+entre eles. A física newtoniana foi fundamental para o desenvolvimento da mecânica clássica e da física moderna,
+
+além de ter aplicações práticas em muitos campos, como engenharia, astronomia, e tecnologia em geral.
+
+A teoria de Newton é aplicada na resolução de problemas envolvendo movimento de corpos em diferentes situações,
+
+como queda livre, lançamento de projéteis, movimento de planetas, entre outros. Além disso, a física newtoniana
+
+também forneceu uma base teórica para o desenvolvimento da física quântica e da relatividade, que expandiram
+
+e modificaram a teoria newtoniana em diferentes escalas e situações. Embora a teoria de Newton seja amplamente
+
+utilizada e ainda seja muito relevante, ela tem limitações, especialmente em escalas muito pequenas ou muito grandes,
+
+como na escala atômica ou em velocidades próximas à da luz. Nessas situações, outras teorias são necessárias
+
+para descrever o comportamento da matéria e da energia. No geral, a física newtoniana é uma teoria importante
+
+para o estudo da natureza e do universo, e continua a ser uma das teorias mais bem-sucedidas na descrição
+
+do movimento dos corpos na escala humana.
