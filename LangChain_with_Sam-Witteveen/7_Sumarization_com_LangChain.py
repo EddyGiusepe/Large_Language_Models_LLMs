@@ -45,12 +45,13 @@ print(len(texts))
 
 from langchain.docstore.document import Document
 
-docs = [Document(page_content=t) for t in texts[:4]]
+docs = [Document(page_content=t) for t in texts]
 #print(docs)
 
 """
 3 tipos de cadeias "CombineDocuments"
 -------------------------------------
+
 Resumo simples com map_reduce
 
 Map Reduce :
@@ -80,7 +81,65 @@ output_summary = chain.run(docs)
 wrapped_text = textwrap.fill(output_summary, width=100)
 print(wrapped_text)
 
-# Para resumir cada parte:
+"""
+Você vai reparar que temos dois Prompt. Um que resume cada parte e o outro Prompt que combina esses resumos.
+"""
+# Um Prompt que resume cada parte:
 print(chain.llm_chain.prompt.template)
+
+# Outro Prompt que combina as partes:
+chain.combine_document_chain.llm_chain.prompt.template
+
+"""
+Sendo um pouco mais detalhista:
+"""
+chain = load_summarize_chain(llm, 
+                             chain_type="map_reduce",
+                             verbose=True
+                             )
+
+output_summary = chain.run(docs)
+wrapped_text = textwrap.fill(output_summary, 
+                             width=100,
+                             break_long_words=False,
+                             replace_whitespace=False)
+print(wrapped_text)
+
+
+"""
+Resumindo com a Chain 'stuff'
+
+Stuff:
+------
+Stuffing é o método mais simples, no qual você simplesmente coloca todos os dados relacionados
+no prompt como contexto para passar para o modelo de linguagem. Isso é implementado no LangChain
+como StuffDocumentsChain.
+
+Prós:
+===== Faz apenas uma única chamada para o LLM. Ao gerar texto, o LLM tem acesso a todos os dados de uma só vez.
+
+Contras:
+======== A maioria dos LLMs possui um comprimento de contexto e, para documentos grandes
+         (ou muitos documentos), isso não funcionará, pois resultará em um prompt maior
+         que o comprimento do contexto.
+
+A principal desvantagem desse método é que ele funciona apenas com pedaços menores de dados. Depois de
+trabalhar com muitos dados, essa abordagem não é mais viável. As próximas duas abordagens são projetadas
+para ajudar a lidar com isso.
+
+Link --> https://colab.research.google.com/drive/1FJ7-nhTktyMSsbxI6CHye1tsfrY1Khqi?usp=sharing#scrollTo=OzCHODNOPKnO
+"""
+
+
+
+
+
+
+
+
+
+
+
+
 
 
