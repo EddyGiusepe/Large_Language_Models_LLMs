@@ -1,6 +1,7 @@
 """
 Data Scientist.: PhD.Eddy Giusepe Chirinos Isidro
 
+🤗 Baseado no tutorial de jcharistech.com 🤗
 
 Resumo de texto com SpaCy
 -------------------------
@@ -36,8 +37,7 @@ dados é um campo de estudo dentro do aprendizado de máquina e se concentra na 
 Em sua aplicação em problemas de negócios, o aprendizado de máquina também é conhecido como análise preditiva.
 """
 
-# document1 = """
-# """
+
 
 nlp = spacy.load('pt_core_news_lg')
 
@@ -113,7 +113,7 @@ sentence_scores = {}
 for sent in sentence_list:  
         for word in sent:
             if word.text.lower() in word_frequencies.keys():
-                if len(sent.text.split(' ')) < 80:
+                if len(sent.text.split(' ')) < 30:
                     if sent not in sentence_scores.keys():
                         sentence_scores[sent] = word_frequencies[word.text.lower()]
                     else:
@@ -127,7 +127,7 @@ lowered_sentence_scores = {}
 for sent in lowered_sentence_list:  
         for word in sent.split():
             if word in word_frequencies.keys():
-                if len(sent.split(' ')) < 80:
+                if len(sent.split(' ')) < 30:
                     if sent not in sentence_scores.keys():
                         lowered_sentence_scores[sent] = word_frequencies[word]
                     else:
