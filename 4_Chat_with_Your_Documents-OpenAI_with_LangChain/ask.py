@@ -13,8 +13,14 @@ from langchain import OpenAI
 from langchain.vectorstores import Chroma
 from langchain.embeddings.openai import OpenAIEmbeddings
 
+# Isto é quando usas o arquivo .env:
+from dotenv import load_dotenv
 import os
-os.environ["OPENAI_API_KEY"] = "CHAVE API"
+#print('Carregando a minha chave Key: ', load_dotenv())
+load_dotenv()
+Eddy_API_KEY_OpenAI = os.environ['OPENAI_API_KEY'] 
+Eddy_API_KEY_HuggingFace = os.environ["HUGGINGFACEHUB_API_TOKEN"]
+
 
 embeddings = OpenAIEmbeddings()
 
