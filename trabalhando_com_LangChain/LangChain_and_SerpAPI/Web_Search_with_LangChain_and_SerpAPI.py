@@ -54,8 +54,18 @@ tools = load_tools(["serpapi"],
 
 agent = initialize_agent(tools,
                          llm,
-                         agent = AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
+                         agent = AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=False)
 
 #response = agent.run("De acordo com o MarketWatch, qual é o preço do S&P 500 Future Dec 2024?")
-response = agent.run("Quem é o presidente do Perú?")
-print(response)
+#response = agent.run("Quem é o presidente do Perú?")
+#print(response)
+
+
+print("Digite a sua pergunta que será pesquisada na Web 🥳: ")
+while True:
+    query = input("Usuário: ")
+    response = agent.run(query)
+    print("Assistente da cocriar: ", response)
+
+    if not query:
+        break
