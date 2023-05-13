@@ -1,7 +1,13 @@
 """
 Data Scientist.: PhD.Eddy Giusepe Chirinos Isidro
 
+CHROMA
+======
 
+Chroma é um banco de dados para criar aplicativos de IA com Embeddings.
+
+Aqui vou estudar e analisar certos parâmetros relevantes na hora de realizar a pesqusia 
+por similaridade em texto.
 """
 # Isto é quando usas o arquivo .env:
 from dotenv import load_dotenv
