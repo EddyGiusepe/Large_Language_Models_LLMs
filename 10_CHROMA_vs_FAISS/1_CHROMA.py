@@ -17,6 +17,7 @@ load_dotenv()
 Eddy_API_KEY_OpenAI = os.environ['OPENAI_API_KEY'] 
 Eddy_API_KEY_HuggingFace = os.environ["HUGGINGFACEHUB_API_TOKEN"]
 
+
 from langchain.chains import RetrievalQA # Tem que atualizar --> pip install langchai==0.0.137
 from langchain.llms import OpenAI
 from langchain.document_loaders import TextLoader
