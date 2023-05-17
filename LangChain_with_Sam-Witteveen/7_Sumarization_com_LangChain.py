@@ -127,7 +127,9 @@ A principal desvantagem desse método é que ele funciona apenas com pedaços me
 trabalhar com muitos dados, essa abordagem não é mais viável. As próximas duas abordagens são projetadas
 para ajudar a lidar com isso.
 
-Link --> https://colab.research.google.com/drive/1FJ7-nhTktyMSsbxI6CHye1tsfrY1Khqi?usp=sharing#scrollTo=OzCHODNOPKnO
+Link parte 1 --> https://colab.research.google.com/drive/1FJ7-nhTktyMSsbxI6CHye1tsfrY1Khqi?usp=sharing#scrollTo=OzCHODNOPKnO
+
+Link parte 2 --> https://colab.research.google.com/drive/1uS_ARUtnrWH1PUAdo1yYe0O48-0YZE3s?usp=sharing
 """
 
 
