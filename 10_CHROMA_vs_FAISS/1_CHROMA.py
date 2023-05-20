@@ -46,19 +46,19 @@ documents = loader.load()
 
 # Dividir os documentos em chunks:
 #text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=200)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=700, chunk_overlap=300)
 texts = text_splitter.split_documents(documents=documents) # Para .pdf e .txt 
 
 
 persist_directory = './chromadb'
 
 # Selecione que EMBEDDINGS quer usar:
-#embeddings = OpenAIEmbeddings()
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2") # Default --> "sentence-transformers/all-mpnet-base-v2" "neuralmind/bert-large-portuguese-cased"
-from transformers import AutoModel
-model_name="sentence-transformers/all-mpnet-base-v2"
-model = AutoModel.from_pretrained(model_name)
-print("O tamanho do Embedding é: ", model.config.hidden_size)
+embeddings = OpenAIEmbeddings()
+# embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2") # Default --> "sentence-transformers/all-mpnet-base-v2" "neuralmind/bert-large-portuguese-cased"
+# from transformers import AutoModel
+# model_name="sentence-transformers/all-mpnet-base-v2"
+# model = AutoModel.from_pretrained(model_name)
+# print("O tamanho do Embedding é: ", model.config.hidden_size)
 
 
 # Crie o vectorestore para usar como índice (index):
@@ -93,7 +93,8 @@ print("")
 while True:
     query = input("Pergunta do usuário: ")
     docs_score = db.similarity_search_with_score(query=query, distance_metric="cos", k=4)
-    #print(docs_score)
+    print(docs_score)
+    print("")
     resposta = docs_score[0][0].page_content
     print("\033[033mA resposta mais SIMILAR é: \033[m", resposta)
     print("")
