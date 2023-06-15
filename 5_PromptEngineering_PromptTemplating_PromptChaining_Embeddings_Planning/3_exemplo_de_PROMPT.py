@@ -60,6 +60,8 @@ while True:
     )
     
     # Exibe a resposta do assistente de AI
+    #print(response)
+    print("🤗")
     resposta = response.choices[0].message["content"].strip()
     print("Assistente da COCRIAR:", resposta)
 
