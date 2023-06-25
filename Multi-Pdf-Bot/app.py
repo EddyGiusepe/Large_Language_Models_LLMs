@@ -7,6 +7,10 @@ Este maravilhoso projeto é da "Engenheira Samreenhabib" https://github.com/Samr
 Muito grato a ela por compartilhar este fantástico projeto.
 
 GitHub: https://github.com/Samreenhabib/Multi-Pdf-Bot/tree/main
+
+Execução deste script:
+---------------------- 
+                      $ streamlit run app.py
 """
 import streamlit as st
 from dotenv import load_dotenv
