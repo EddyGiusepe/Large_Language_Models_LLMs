@@ -69,6 +69,7 @@ async def Function_calling(query: QueryRequest):
     output = json.loads(response.choices[0]["message"]["function_call"]["arguments"])
     return QueryResponse(entities=output)
 
+
 # Executar a API usando o servidor Uvicorn:
 if __name__ == "__main__":
     import uvicorn
