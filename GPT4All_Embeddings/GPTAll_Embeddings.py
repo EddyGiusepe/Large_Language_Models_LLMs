@@ -16,6 +16,7 @@ from gpt4all import GPT4All, Embed4All
 text = 'A OpenAI tem sede em São Francisco.'
 embedder = Embed4All()
 output = embedder.embed(text)
+
 print("")
 print(output)
 print("")
