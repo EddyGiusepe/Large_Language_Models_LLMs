@@ -35,10 +35,13 @@ app = FastAPI(title='🤗 NER com a API da OpenAI e Function calling 🤗',
 
 @app.post("/process_query")
 async def Function_calling(query: QueryRequest):
+    prompt = f"""Você deve atuar como um especialista em ciência de dados e Processamento de linguagem \
+                 Natural (NLP). A seguir realiza o Reconhecimento de Entidades Nomeadas (NER) do tipo: \
+                 ORGANIZAÇÃO, PESSOA e LOCALIZAÇÃO em: {query}"""
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-0613",
-        messages=[{"role": "user", "content": f"Na frase faz um Reconhecimento de Entidades Nomeadas (NER): {query}"}],
+        messages=[{"role": "user", "content": prompt}],
         functions=[{"name": "get_entities_in_user_query",
                     "description": "Classifique as entidades relevantes da frase.",
                     "parameters": {
