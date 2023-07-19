@@ -9,9 +9,9 @@ Objetivo:
 Método de xecução:
 ================== Você pode executar no Terminal, assim:
 
-                  $ uvicorn main2:app --host 0.0.0.0 --port 8000 --reload
+                  $ uvicorn main3:app --host 0.0.0.0 --port 8000 --reload
                   ou
-                  $ python main2.py
+                  $ python main3.py
 """
 import openai
 import json
@@ -36,8 +36,8 @@ app = FastAPI(title='🤗 NER com a API da OpenAI e Function calling 🤗',
 @app.post("/process_query")
 async def Function_calling(query: QueryRequest):
     prompt = f"""Você deve atuar como um especialista em ciência de dados e Processamento de linguagem \
-                 Natural (NLP). A seguir realiza o Reconhecimento de Entidades Nomeadas (NER) do tipo: \
-                 ORGANIZAÇÃO, PESSOA e LOCALIZAÇÃO em: ```{query}```"""
+                 Natural (NLP). A seguir você dever realizar o Reconhecimento de Entidades Nomeadas (NER), apenas, do tipo: \
+                 ORGANIZAÇÃO em: ```{query}```"""
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-0613",
@@ -49,15 +49,9 @@ async def Function_calling(query: QueryRequest):
                         "properties": {
                             "ORG": {"type": "string",
                                     "description": "Entidade nomeada do tipo ORGANIZAÇÃO (ORG)."
+                                    }
                                     },
-                            "PER": {"type": "string",
-                                        "description": "Entidade nomeada do tipo PESSOA (PER)"
-                                },
-                            "LOC": {"type": "string",
-                                        "description": "Entidade nomeada do tipo LOCALIZAÇÃO (LOC)"
-                                }
-                                    },
-                    "required": ["ORG", "PER", "LOC"]
+                    "required": ["ORG"]
                                 }
                     }
                 ],
