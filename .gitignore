@@ -150,3 +150,4 @@ faiss_index/
 2205.11916v4.Large_Language_Models_are_Zero_Shot_Reasoners.pdf
 chromadb/
 flagged/
+docker-compose.yml
