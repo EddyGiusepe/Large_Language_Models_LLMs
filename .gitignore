@@ -151,3 +151,4 @@ faiss_index/
 chromadb/
 flagged/
 docker-compose.yml
+database_eddy.db
