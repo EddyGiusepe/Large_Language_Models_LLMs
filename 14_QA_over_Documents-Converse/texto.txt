@@ -1,0 +1,5 @@
+Um fenótipo refere-se às propriedades físicas observáveis \
+                    de um organismo, incluindo sua aparência, desenvolvimento \
+                    e comportamento. É determinado tanto pelo genótipo do organismo, \
+                    que é o conjunto de genes que ele carrega, quanto pelas influências \
+                    ambientais sobre esses genes.

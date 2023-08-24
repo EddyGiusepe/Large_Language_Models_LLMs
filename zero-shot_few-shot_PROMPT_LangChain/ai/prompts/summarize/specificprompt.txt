@@ -1,0 +1,7 @@
+"""
+Resuma o texto a seguir.
+O resumo não deve exceder 30 palavras
+Adicione marcadores no máximo 10
+imprima a notícia resumida
+text:
+"""

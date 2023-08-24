@@ -1,0 +1,18 @@
+Tomar notas e resumir as atas das reuniões são partes indispensáveis ​​dos negócios diários. 
+Aproveitando os recursos de exportação de transcrições do software de reunião e dos modelos 
+contemporâneos de linguagem grande, podemos automatizar o trabalho chato e nos permitir gastar 
+mais tempo em trabalhos criativos e interessantes. Nesta postagem do blog, vou mostrar como construir 
+uma ferramenta de criação de atas de reuniões usando ChatGPT e LangChain.
+
+Fazer reuniões não é divertido, fazer anotações e escrever atas de reuniões torna tudo pior. 
+Tomar notas acrescenta um fardo extra aos participantes quando tentam envolver-se na comunicação. 
+Isso seria ainda pior se você digitasse mais devagar como eu. Na maioria das vezes, a elaboração de 
+atas de reuniões é a resposta dos organizadores da reunião; alguns bons organizadores são eficientes 
+em escrevê-las. No entanto, se houver muitas reuniões, esta tarefa poderá ser tediosa e demorada.
+
+Com a inovação dos modelos de linguagem Large, principalmente a criação do ChatGPT, temos mais 
+brinquedos para automatizar nosso fluxo de trabalho. LangChain é uma estrutura para desenvolvimento 
+de aplicativos baseados em modelos de linguagem. Podemos construir aplicativos usando LangChain para 
+reduzir códigos clichê no desenvolvimento de aplicativos LLM.
+
+Para mais informações acesse no seguinte link: https://dxiaochuan.medium.com/summarising-your-meeting-with-chatgpt-and-langchain-8eb646cfcdd1

@@ -1,0 +1,7 @@
+"""
+A partir do texto abaixo, extraia os nomes das tecnologias
+que foram mencionadas em formato json com a seguinte chave
+Ferramenta
+Imprima o json
+text:
+"""
