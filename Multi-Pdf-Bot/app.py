@@ -84,7 +84,12 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
+    import os
+    import openai
+    from dotenv import load_dotenv, find_dotenv
+    _ = load_dotenv(find_dotenv()) # read local .env file
+    openai.api_key  = os.environ['OPENAI_API_KEY']
+
     st.set_page_config(page_title="Bate-papo com vários PDFs",
                        page_icon="logo1.png" )
     st.write(css, unsafe_allow_html=True)
