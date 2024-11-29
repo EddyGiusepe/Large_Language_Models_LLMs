@@ -128,7 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Eddy
+# EddyGiusepe
 venv_LLMs/
 .env
 credit_risk_dataset.csv
@@ -160,3 +160,5 @@ Alteracoes_Ally-API.md
 Alteracoes_Ally-API.pdf
 1-Administracao_digital.txt
 .gradio/
+scratch/
+paper_Docling.pdf
