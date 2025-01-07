@@ -2,6 +2,7 @@
 """
 Senior Data Scientist.: Dr. Eddy Giusepe Chirinos Isidro
 
+
 Web Scraping Assíncrono com Crawl4AI
 ====================================
 Este script é um web scraper que acessa especificamente a página de cursos de tecnologia
